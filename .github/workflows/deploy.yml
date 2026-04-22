@@ -27,9 +27,10 @@ jobs:
         run: node packages/github-action/prepareDeploy.js
       - name: Get latest version
         run: cd packages/github-action && npm install && npm install --save r2-explorer@latest
-      - name: Deploy
+- name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
+          apiKey: ${{ secrets.CLOUDFLARE_API_KEY }}
+          email: ${{ secrets.CLOUDFLARE_EMAIL }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: "packages/github-action"
