@@ -1,3 +1,4 @@
+account_id = "95fbd687131ff4cfc4085ccedea19971"
 name = "my-r2-explorer"
 compatibility_date = "2024-11-06"
 main = "index.ts"
