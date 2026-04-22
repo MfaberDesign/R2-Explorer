@@ -5,7 +5,7 @@ workers_dev = true
 assets = { directory = "../../dashboard/dist/spa", binding = "ASSETS", html_handling = "auto-trailing-slash", not_found_handling = "single-page-application", run_worker_first = ["/api/*", "/share/*"] }
 
 [[r2_buckets]]
-binding = 'teste'
-bucket_name = 'teste'
+binding = "bunchartermedia"
+bucket_name = "unchartermedia"
 preview_bucket_name = 'teste'
 
